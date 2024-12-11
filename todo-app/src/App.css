@@ -1,0 +1,144 @@
+ /* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.todo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo-input-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input-item label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.todo-input-item input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.todo-input-item button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.todo-input-item button:hover {
+  background-color: #45a049;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-area button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.btn-area button:hover {
+  background-color: #ddd;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-list-item {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.todo-list-item.completed {
+  background-color: #e0f7fa;
+  text-decoration: line-through;
+}
+
+.todo-list-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.todo-list-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.todo-list-item button {
+  padding: 8px 15px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-list-item button:hover {
+  background-color: #1976D2;
+}
+
+.todo-list-item button.completed {
+  background-color: #f44336;
+}
+
+.todo-list-item button.completed:hover {
+  background-color: #e53935;
+}
